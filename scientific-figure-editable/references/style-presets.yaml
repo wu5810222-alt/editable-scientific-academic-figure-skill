@@ -1,0 +1,56 @@
+styles:
+  clean-pipeline:
+    layout: left_to_right
+    density: low
+    palette: {input: "#DCEBFA", core: "#F7F8FA", contribution: "#F6C7C0", output: "#E6F6D5", ink: "#344054"}
+    shapes: [thumbnail, rounded_rectangle, arrow]
+  token-grid:
+    layout: grid_to_sequence
+    density: medium
+    palette: {token_a: "#DCEBFA", token_b: "#FFF0C2", selected: "#F6C7C0", core: "#F7F8FA", ink: "#344054"}
+    shapes: [tile, brace, token_strip, repeated_block]
+  hierarchical-pyramid:
+    layout: staged_pyramid
+    density: medium
+    palette: {stage_1: "#DCEBFA", stage_2: "#CFE5DE", stage_3: "#E6F6D5", stage_4: "#FFF0C2", contribution: "#F6C7C0"}
+    shapes: [feature_stack, stage_band, inset]
+  query-decoder:
+    layout: parallel_dense_sparse
+    density: medium
+    palette: {features: "#DCEBFA", query: "#FFF0C2", decoder: "#F7F8FA", output: "#E6F6D5", selected: "#F6C7C0"}
+    shapes: [feature_grid, query_circle, decoder_block, mask_overlay]
+  recurrent-state:
+    layout: temporal_with_state_line
+    density: medium
+    palette: {input: "#DCEBFA", state: "#E6F6D5", gate: "#FFF0C2", selected: "#F6C7C0", ink: "#344054"}
+    shapes: [time_marker, state_circle, memory_bar, loop_arrow, inset]
+  sparse-routing:
+    layout: fan_out_fan_in
+    density: medium
+    palette: {token: "#DCEBFA", router: "#FFF0C2", active_expert: "#F6C7C0", inactive_expert: "#EAECF0", merge: "#E6F6D5"}
+    shapes: [token_strip, router, expert_bank, sparse_connector, merge]
+  system-swimlane:
+    layout: horizontal_lanes
+    density: high
+    palette: {modality: "#DCEBFA", shared: "#F7F8FA", training: "#FFF0C2", output: "#E6F6D5", contribution: "#F6C7C0"}
+    shapes: [phase_band, lane, adapter, shared_core, contribution_badge]
+  geometry-field:
+    layout: spatial_center
+    density: medium
+    palette: {geometry: "#D9F0EA", field: "#E6F6D5", ray: "#E4A900", target: "#F6C7C0", core: "#F7F8FA"}
+    shapes: [camera, ray, point, field_panel, renderer, trajectory]
+  closed-loop-agent:
+    layout: closed_loop
+    density: medium
+    palette: {observation: "#DCEBFA", state: "#E6F6D5", imagination: "#FFF0C2", action: "#F6C7C0", environment: "#F7F8FA"}
+    shapes: [environment, observation, latent_state, rollout_strip, policy, loop_arrow]
+  scientific-graph:
+    layout: encode_process_decode
+    density: medium
+    palette: {observation: "#DCEBFA", graph: "#D9F0EA", processor: "#F7F8FA", prediction: "#E6F6D5", error: "#F6C7C0"}
+    shapes: [map_or_field, graph, processor_stack, decoder, prediction_field]
+  result-first-editorial:
+    layout: result_dominant
+    density: low
+    palette: {background: "#FFFFFF", mechanism: "#F7F8FA", accent: "#4F7CAC", highlight: "#F6C7C0", ink: "#1D2939"}
+    shapes: [result_strip, compact_mechanism, callout]

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scientific Figure Editable"
+  short_description: "Editable research figures with selectable styles"
+  default_prompt: "Analyze the method topology, offer 2-3 compatible scientific figure styles with one recommendation, then create or review a publication-ready editable Draw.io/PPTX figure and run visual and editability QA."
